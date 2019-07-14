@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Mona</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Home</string>
+    <string name="Cart">Cart</string>
+    <string name="categories">Categories</string>
+    <string name="Brands">Brands</string>
+    <string name="profile">Profile</string>
+    <string name="setting">setting</string>
+    <string name="Mona">Mona</string>
+    <string name="your24hMonastore">your 24h Mona.store</string>
+    <string name="Forgetpassword">Forget password?</string>
+    <string name="Login">Login</string>
+    <string name="Or">Or</string>
+    <string name="Colors">Colors</string>
+    <string name="ProductDescription">Product Description</string>
+    <string name="Sizes">Sizes</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="add_to_wishlist">Add to wishlist</string>
+    <string name="Register">Register</string>
+</resources>

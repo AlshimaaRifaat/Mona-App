@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group40"
+    tools:context=".activity.LoginRegisterActivity">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/munalogofinal"
+            android:layout_marginTop="@dimen/_33sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/your24hMonastore"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:textSize="@dimen/_16sdp"
+            android:layout_below="@id/img_logo"
+            android:id="@+id/T_textlogo"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/_33sdp">
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/login_btn"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#fff"
+        android:text="@string/Register"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/login_btn"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_toEndOf="@id/btn_register"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="#fff"
+        android:text="@string/Login"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
+</RelativeLayout>

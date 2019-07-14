@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:background="#7e7f7f"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp">
+
+
+                <TextView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/mona"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_14sdp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_home_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        ></android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/relative_product"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_below="@id/recycler_home_slider"
+        >
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_clothes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            app:backgroundTint="#eaeaea"
+            android:spinnerMode="dialog"
+            ></android.support.v7.widget.AppCompatSpinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_size"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_below="@id/recycler_home_slider"
+        android:layout_toEndOf="@id/relative_product"
+        >
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_size"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            app:backgroundTint="#eaeaea"
+            android:spinnerMode="dialog"
+            ></android.support.v7.widget.AppCompatSpinner>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_product"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        ></android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
