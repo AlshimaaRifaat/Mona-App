@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_128sdp"
+    android:background="#fff">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/_97sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_margin="@dimen/_7sdp"
+        android:background="#414040"/>
+<RelativeLayout
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@id/img"
+    android:layout_marginTop="@dimen/_21sdp"
+    android:id="@+id/rel_product">
+    <TextView
+        android:id="@+id/T_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#575757"
+        android:textSize="@dimen/_9sdp"
+        android:text="name"
+        android:maxLines="1"
+        android:layout_below="@id/card_slider"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/T_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b3b3b3"
+        android:textSize="@dimen/_9sdp"
+        android:layout_below="@+id/T_name"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:maxLines="1"
+        android:text="EDFF"
+
+        />
+    <TextView
+        android:id="@+id/T_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b3b3b3"
+        android:textSize="@dimen/_9sdp"
+        android:layout_below="@+id/T_brand"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:maxLines="1"
+        android:text="size"
+
+        />
+    <TextView
+        android:id="@+id/T_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b3b3b3"
+        android:textSize="@dimen/_9sdp"
+        android:layout_below="@+id/T_size"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:maxLines="1"
+        android:text="color"
+        />
+    <TextView
+        android:id="@+id/T_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#575757"
+        android:textSize="@dimen/_9sdp"
+        android:layout_below="@+id/T_color"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:maxLines="1"
+        android:text="price"
+        />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_33sdp"
+        android:layout_alignParentEnd="true"
+       android:layout_marginEnd="@dimen/_12sdp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ic_plus"/>
+        <RelativeLayout
+            android:id="@+id/rel_quantity"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_below="@id/ic_plus"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/circle_img">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron"
+               android:layout_centerInParent="true"
+                android:text="17"
+                android:textColor="#b3b3b3"
+                android:textStyle="bold"
+                android:id="@+id/T_quantity"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rel_quantity"
+            android:id="@+id/ic_min"
+            android:layout_marginTop="@dimen/_6sdp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#b3b3b3"
+        android:layout_below="@+id/img"
+
+        />
+
+</RelativeLayout>
