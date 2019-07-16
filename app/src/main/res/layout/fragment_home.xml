@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#fff"
+    android:id="@+id/rel_container"
     tools:context=".fragment.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -29,6 +30,16 @@
                     android:layout_centerInParent="true"
                     android:textColor="#fff"
                     android:textSize="@dimen/_14sdp"/>
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/shoppingcart"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_9sdp"
+                    android:id="@+id/ic_cart"/>
             </RelativeLayout>
         </android.support.v7.widget.Toolbar>
     <android.support.v7.widget.RecyclerView
@@ -40,7 +51,7 @@
     <RelativeLayout
         android:id="@+id/relative_product"
         android:layout_width="@dimen/_160sdp"
-        android:layout_height="@dimen/_47sdp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_1sdp"
         android:layout_marginStart="@dimen/_1sdp"
         android:layout_marginEnd="@dimen/_1sdp"
@@ -50,7 +61,7 @@
         <android.support.v7.widget.AppCompatSpinner
             android:id="@+id/spinner_clothes"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_60sdp"
+            android:layout_height="@dimen/_42sdp"
             style="@style/Widget.AppCompat.Spinner.Underlined"
             app:backgroundTint="#eaeaea"
             android:spinnerMode="dialog"
@@ -60,7 +71,7 @@
     <RelativeLayout
         android:id="@+id/relative_size"
         android:layout_width="@dimen/_160sdp"
-        android:layout_height="@dimen/_47sdp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_1sdp"
         android:layout_marginStart="@dimen/_1sdp"
         android:layout_marginEnd="@dimen/_1sdp"
@@ -70,7 +81,7 @@
         <android.support.v7.widget.AppCompatSpinner
             android:id="@+id/spinner_size"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_60sdp"
+            android:layout_height="@dimen/_42sdp"
             style="@style/Widget.AppCompat.Spinner.Underlined"
             app:backgroundTint="#eaeaea"
             android:spinnerMode="dialog"

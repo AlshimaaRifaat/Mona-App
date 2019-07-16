@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toolbar;
 
 import com.mona.mona.R;
@@ -25,6 +26,9 @@ import static com.mona.mona.activity.NavigationActivity.toolbar;
 public class HomeFragment extends Fragment {
 @BindView(R.id.toolbar)
 android.support.v7.widget.Toolbar toolbar;
+
+    @BindView(R.id.ic_cart)
+   ImageView ic_cart;
 private Unbinder unbinder;
 
     public HomeFragment() {
@@ -57,6 +61,13 @@ View view;
                 } else {
                     NavigationActivity.drawer.openDrawer(GravityCompat.START);
                 }
+            }
+        });
+        ic_cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.rel_container,new CartFragment())
+                        .addToBackStack(null).commit();
             }
         });
         return view;

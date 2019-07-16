@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_13sdp"
                 android:layout_marginEnd="@dimen/_13sdp"
-                android:hint="البريد الالكتروني"
+                android:hint="@string/Full_Name"
                 >
 
                 <EditText
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_13sdp"
                 android:layout_marginEnd="@dimen/_13sdp"
-                android:hint="البريد الالكتروني"
+                android:hint="@string/Phone"
                 >
 
                 <EditText
@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_13sdp"
                 android:layout_marginEnd="@dimen/_13sdp"
-                android:hint="البريد الالكتروني"
+                android:hint="@string/Email"
                 >
 
                 <EditText
@@ -164,7 +164,7 @@
                 app:passwordToggleEnabled="true"
                 android:layout_toRightOf="@id/pass_img"
                 android:layout_marginEnd="@dimen/_13sdp"
-                android:hint="كلمة المرور"
+                android:hint="@string/Password"
                 >
 
                 <EditText

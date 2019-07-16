@@ -27,4 +27,10 @@
     <string name="add_to_cart">Add to cart</string>
     <string name="add_to_wishlist">Add to wishlist</string>
     <string name="Register">Register</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="Phone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Orders">Orders</string>
+    <string name="Wishlist">Wishlist</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +7,144 @@
     tools:context=".fragment.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="profile"
-        android:textColor="#000"/>
+        android:layout_height="@dimen/_42sdp"
+        android:background="#7e7f7f"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp">
 
-</FrameLayout>
+
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/mona"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp"/>
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/shoppingcart"
+                android:layout_alignParentRight="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_9sdp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_145sdp"
+        android:layout_height="@dimen/_145sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_9sdp"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="#cdcdcd"
+        android:layout_below="@+id/toolbar"
+        android:background="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_profile"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#575757"
+        android:text="shimaa"
+        android:textSize="@dimen/_9sdp"
+        android:id="@+id/T_fullname"/>
+    <TextView
+        android:id="@+id/T_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b3b3b3"
+        android:textSize="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_below="@+id/T_fullname"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:text="city"
+        />
+    <RelativeLayout
+        android:id="@+id/rel_orders"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_below="@id/T_city"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/rel_orders">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#575757"
+            android:text="34"
+            android:textSize="@dimen/_9sdp"
+            android:id="@+id/T_num_orders"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#b3b3b3"
+            android:textSize="@dimen/_9sdp"
+            android:layout_below="@+id/T_num_orders"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:text="@string/Orders"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:textAllCaps="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_wishlist"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rel_orders"
+        android:layout_below="@id/T_city">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#575757"
+            android:text="22"
+            android:textSize="@dimen/_9sdp"
+            android:id="@+id/T_num_wishlist"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#b3b3b3"
+            android:textSize="@dimen/_9sdp"
+            android:layout_below="@+id/T_num_wishlist"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:text="@string/Wishlist"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:textAllCaps="true"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_wishlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_orders"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        ></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
