@@ -33,4 +33,7 @@
     <string name="Password">Password</string>
     <string name="Orders">Orders</string>
     <string name="Wishlist">Wishlist</string>
+    <string name="Subtotal">Subtotal:</string>
+    <string name="EstimatedTax">Estimated Tax:</string>
+    <string name="Total">Total:</string>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#000"
     tools:context=".fragment.CartFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,5 +15,81 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         ></android.support.v7.widget.RecyclerView>
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/rel_subtotal"
+       android:layout_marginStart="@dimen/_3sdp"
+       android:layout_marginEnd="@dimen/_3sdp"
+       android:layout_marginTop="@dimen/_4sdp"
+       android:layout_below="@id/recycler_wishlist">
+    <TextView
+        android:id="@+id/sub_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:textSize="@dimen/_12sdp"
+        android:textColor="#747474"
+        android:text="@string/Subtotal"
+        android:textStyle="bold"
+        />
+       <TextView
+           android:id="@+id/T_sub_total"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+          android:layout_toEndOf="@id/sub_total"
+           android:layout_marginStart="@dimen/_4sdp"
+           android:layout_alignParentEnd="true"
+           android:layout_marginEnd="@dimen/_4sdp"/>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_subtotal"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:id="@+id/rel_tax">
+    <TextView
+        android:id="@+id/tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="#747474"
+        android:text="@string/EstimatedTax"
+        android:textStyle="bold"
+        />
+        <TextView
+            android:id="@+id/T_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tax"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_tax"
+        android:layout_marginStart="@dimen/_3sdp">
+    <TextView
+        android:id="@+id/delivery_fees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="#747474"
+        android:text="@string/Total"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_4sdp"
+        />
+        <TextView
+            android:id="@+id/T_delivery_fees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/delivery_fees"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_alignParentEnd="true"/>
+</RelativeLayout>
 </RelativeLayout>
